@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')  # GUI不要の描画バックエンド
 import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
