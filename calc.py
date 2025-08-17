@@ -1,6 +1,7 @@
 import streamlit as st
-#from lens_diagram import draw_lens_diagram
 from lens_calc import calculate_edge_thickness
+
+#from lens_diagram import draw_lens_diagram
 
 st.header("👓 コバ厚計算ツール")
 
@@ -23,4 +24,5 @@ st.metric("周辺厚（mm）", f"{edge_thickness} mm")
 #    center_thickness=center_thickness,
 #    edge_thickness=edge_thickness
 #)
+
 
