@@ -13,5 +13,7 @@ edge_thickness = calculate_edge_thickness(
     sphere, cylinder, axis, distance, refractive_index, center_thickness
 )
 
-st.metric("周辺厚（mm）", f"{edge_thickness} mm")
-
+# 計算実行
+if st.button("計算する"):
+    edge = calculate_edge_thickness(sphere, cylinder, axis, distance, refractive_index, center_thickness)
+    st.success(f"✅ コバ厚は **{edge} mm** です")
