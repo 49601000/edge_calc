@@ -7,7 +7,7 @@ distance = st.number_input("レンズ径（mm）", value=60)
 sphere = st.number_input("球面度数（D）", value=-4.0)
 cylinder = st.number_input("円柱度数（D）", value=-1.5)
 refractive_index = st.number_input("屈折率", value=1.60)
-center_thickness = st.number_input("中心厚（mm）", value=2.0)
+center_thickness = st.number_input("中心厚（mm）", value=20.0)
 
 edge_thickness = calculate_edge_thickness(
     sphere, cylinder, axis, distance, refractive_index, center_thickness
@@ -17,3 +17,4 @@ edge_thickness = calculate_edge_thickness(
 if st.button("計算する"):
     edge = calculate_edge_thickness(sphere, cylinder, axis, distance, refractive_index, center_thickness)
     st.success(f"✅ コバ厚は **{edge} mm** です")
+
