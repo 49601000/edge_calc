@@ -1,1 +1,1 @@
-from .thickness import calculate_thickness
+from .thickness import calculate_edge_thickness
