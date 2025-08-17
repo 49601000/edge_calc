@@ -1,5 +1,5 @@
 import streamlit as st
-
+import math
 st.title("👓 メガネレンズのコバ厚計算ツール")
 
 # 入力フォーム
@@ -13,4 +13,5 @@ center_thickness = st.number_input("中心厚（mm）", value=2.0, step=0.1)
 # 計算実行
 if st.button("計算する"):
     edge = calculate_edge_thickness(sphere, cylinder, axis, distance, refractive_index, center_thickness)
+
     st.success(f"✅ コバ厚は **{edge} mm** です")
